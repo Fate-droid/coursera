@@ -6,21 +6,16 @@
          initial-scale=1,shrink-to-fit=no">
          <!--Bootstrap CSS-->
          <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+         <link rel="stylesheet" href="styles.css">
          <title> TIMES </title>
    </head>
-   <h2>HALLO</h2>
    <body>
       <div class="jumbotron">
-         <h1>Bootstrap Tutorial</h1>      
-         <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+         <h1>Catalogue</h1>      
+         <p>Aqui pode encontrar todo tipo do que esta procurando.</p>
        </div>
        <div class = "container">
-         <div class = "row">
-
-         </div>
-       <div class = "container">
-         <div class = "row">
+         <div class = "d-flex">
             <div class = "col-sm-4">
                <h3>
                   Gadget expansionista
@@ -35,7 +30,7 @@
                <p>
                   Ubicado en el centro del Amazonas, te sorprendera ver lo que la naturaleza es capaz de crear, todo eso en un espacio seguro y a la vez inmerso.
                </p>
-               <button href="#" class="btn">Ir</button>
+               <button href="#" class="btn btn-primary">Ir</button>
                 
             </div>
             <div class = "col-sm-4">
@@ -51,7 +46,7 @@
                <p>
                   Ven a disfrutar de la paradisiaca Isla Rotten, ubicada a 100km de Hawai e con vistas fenomenales de volcanes activos y palmeras playeras.
                </p>
-               <a href="#" class="btn">Ir</a>
+               <a href="#" class="btn btn-primary">Ir</a>
             </div>
             <div class = "col-sm-4">
                <h3>
@@ -66,9 +61,37 @@
                <p>
                   Escápate a este lujoso resort junto al lago, con actividades acuáticas y un spa para relajarte.
                </p>
-               <a href="#" class="btn">Ir</a>
+               <a href="#" class="btn btn-primary">Ir</a>
             </div>
          </div>
+         <footer>
+            <div class = "row"> 
+               <div class = "col-sm-4 d-flex flex-column">
+                  <h3>Siga-nos em</h3>
+                  <a href="http://youtube.com">youtube</a>
+                  <a href="http://instagram.com">instagram</a>
+                  <a href="http://x.com">x</a>
+               </div>
+               <div class ="col-sm-4">
+                  <address>
+                     <h3>Escritorio central</h3>
+                     <p>Avda. Paulista 1064 q/San Martin</p>
+                  </address>
+               </div>
+               <div class ="col-sm-4 d-flex flex-column align-items-end">
+                  <h3>
+                     Quer trabalhar conosco?
+                  </h3><br>
+                  <p>
+                     Mande-nos seu CV
+                  </p><br>
+                  <a href="#" class ="btn btn-primary">
+                     Aqui
+                  </a>
+
+               </div>
+
+         </footer>
       
       <script src="node_modules/jquery/dist/jquery.min.js"></script>
       <script src="node_modules/popper.js/dist/popper.min.js"></script>
