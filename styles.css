@@ -6,11 +6,23 @@ footer{
     color: white;
     width: 100%;
 }
+.breadcrumb{
+    margin-left:20px;
+}
 
+.navbar-brand{
+    padding: 0px 20px 0px 20px;
+}
 
 .jumbotron{
     padding: 10px 10px 0px 10px;
     background-color: #9D4EDD;
     color: white;
     margin-top: 50px;
+}
+
+.text-about{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
 }
