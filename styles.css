@@ -7,11 +7,27 @@ footer{
     width: 100%;
 }
 .breadcrumb{
+    padding: 10px 20px 10px 20px;
+    background-color: lightgray;
+
+}
+.breadcrumb{
     margin-left:20px;
 }
 
 .navbar-brand{
     padding: 0px 20px 0px 20px;
+}
+.card-img-top{
+    border-radius: 8px;
+}
+.card-gadget{
+    width: 20%;
+    flex: 1 200px;
+    margin-top: 10px;
+} 
+.btn-compra{
+    width: 100%;
 }
 
 .jumbotron{

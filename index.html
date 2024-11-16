@@ -7,8 +7,8 @@
          <!--Bootstrap CSS-->
          <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
          <link rel="stylesheet" href="styles.css">
-         <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic/bootstrap.min.css">
-         <title> TIMES </title>
+         <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+         <title> TIMES gadget </title>
    </head>
    <body>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -20,12 +20,13 @@
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active"><a class="nav-link" href="#">Hoteles</a></li> 
               <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li> 
-              <li class="nav-item"><a class="nav-link" href="#">Precios</a></li> 
+              <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li> 
               <li class="nav-item"><a class="nav-link" href="#">Terminos y condiciones</a></li> 
               <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li> 
             </ul>
          </div>
       </nav>   
+
       <div class="jumbotron" >
          <h1>Catalogue</h1>      
          <p>Aqui pode encontrar todo tipo do que esta procurando.</p>
@@ -37,55 +38,65 @@
             </ol>
          </nav>
 
-         <div class = "d-flex">
-            <div class = "col-sm-4">
-               <h3>
-                  Gadget expansionista
-                </h3>
-                <p>
-                  Serve para aumentar os espaços entre os atomos do objeto em expansão. 
-                </p>
-                <h3>
-                  Hotel Manantial
-               </h3>
-               
-               <p>
-                  Ubicado en el centro del Amazonas, te sorprendera ver lo que la naturaleza es capaz de crear, todo eso en un espacio seguro y a la vez inmerso.
-               </p>
-               <button href="#" class="btn btn-primary">Ir</button>
-                
-            </div>
-            <div class = "col-sm-4">
-               <h3>
-                  Dinamo surrealista
-               </h3>
-               <p>
-                  Serve para gerar energia com base em movimento, porem essa energia é transformada em energia escura no final do processo.
-               </p>
-               <h3>
-                  Hotel Isla
-               </h3>
-               <p>
-                  Ven a disfrutar de la paradisiaca Isla Rotten, ubicada a 100km de Hawai e con vistas fenomenales de volcanes activos y palmeras playeras.
-               </p>
-               <a href="#" class="btn btn-primary">Ir</a>
-            </div>
-            <div class = "col-sm-4">
-               <h3>
-                  Aparato de tiempo reverso
-               </h3>
-               <p>
-                  Sirve para volver al pasado y saludar a tu abuelo! Claro que sin decirle quien sos.
-               </p>
-               <h3>
-                  Hotel Resort
-               </h3>
-               <p>
-                  Escápate a este lujoso resort junto al lago, con actividades acuáticas y un spa para relajarte.
-               </p>
-               <a href="#" class="btn btn-primary">Ir</a>
-            </div>
+         <div>
+            <img src="banner-background-5.jpg" class="img-fluid" alt="background image">
          </div>
+
+           <div class="row">
+            <div class="col-sm-6">
+                <p>
+                    <h3>Como funciona?</h3>
+                    <p>Busca los productos y hoteles que desees y esten disponibles en nuestro catálogo genérico</p>
+                </p>    
+            </div>
+            <div class="col-sm-6">
+                <p>
+                    <h3>Como pago?</h3>
+                    <p>Debes mandar monedas fraternales a nuestro hotel especial en la ubicacion secreta.</p>
+                </p>    
+            </div>
+
+        </div>
+
+         <div class = "d-flex flex-wrap flex-row-reverse">
+            <div class="card card-gadget d-flex flex-column justify-content-between ml-2">
+               <div class="card-body">
+                  <h5 class = "card-title">Gadget expansionista</h5>
+                  <h6 class="card-subtitle text-muted">Surreal</h6>
+                  <img class="card-img-top" src="expanse.jpg" alt="imagen de gadget exp.">
+                  <p class="card-text">Sirve para aumentar los espacios entre los atomos del objeto en expansion.</p>               
+               </div>
+               <div>
+                  <button class="btn btn-primary btn-compra">Comprar ya!</button>
+               </div>
+            </div>
+
+               <div class="card card-gadget d-flex flex-column justify-content-between ml-2">
+                  <div class="card-body">
+                     <h5 class = "card-title">Mascara-generadora surrealista</h5>
+                     <h6 class="card-subtitle text-muted">Surreal</h6>
+                     <img class="card-img-top" src="mask.jpg" alt="imagen de gadget exp.">
+                     <p class="card-text">Sirve para transformar movimiento en energia, tiene la particularidad de ser compatible con energía oscura.</p>               
+                  </div>
+                  <div>
+                     <button class="btn btn-primary btn-compra">Comprar ya!</button>
+                  </div>
+               </div>
+               <div class="card card-gadget d-flex flex-column justify-content-between ml-2">
+                  <div class="card-body">
+                     <h5 class = "card-title">Aparato de tiempo reverso</h5>
+                     <h6 class="card-subtitle text-muted">Surreal</h6>
+                     <img class="card-img-top" src="machines-group.jpg" alt="imagen de gadget exp.">
+                     <p class="card-text">
+                        Sirve para volver al pasado y saludar a tu abuelo! Claro que sin decirle quien sos.
+                     </p>               
+                  </div>
+                  <div>
+                     <button class="btn btn-primary btn-compra">Comprar ya!</button>
+                  </div>
+               </div>
+         </div>
+                  
          <footer>
             <div class = "row"> 
                <div class = "col-sm-4 d-flex flex-column">
@@ -110,7 +121,6 @@
                   <a href="#" class ="btn btn-primary">
                      Aqui
                   </a>
-
                </div>
 
          </footer>
