@@ -1,0 +1,29 @@
+{
+  "name": "newproject",
+  "version": "1.0.0",
+  "description": "Proyecto de node.js",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fate-droid/coursera.git"
+  },
+  "author": "Fabio Bareiro Fleitas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fate-droid/coursera/issues"
+  },
+  "homepage": "https://github.com/Fate-droid/coursera#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.16.1"
+  }
+}
