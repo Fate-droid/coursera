@@ -12,13 +12,13 @@
    </head>
    <body>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-         <a class="navbar-brand" href="#">Hoteles</a>
+         <a class="navbar-brand" href="#">Catalogue</a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
          </button>
          <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active"><a class="nav-link" href="#">Hoteles</a></li> 
+              <li class="nav-item active"><a class="nav-link" href="#">Articulos</a></li> 
               <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li> 
               <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li> 
               <li class="nav-item"><a class="nav-link" href="#">Terminos y condiciones</a></li> 
@@ -28,8 +28,10 @@
       </nav>   
 
       <div class="jumbotron" >
-         <h1>Catalogue</h1>      
-         <p>"Cualquier gadget que puedas imaginar"</p>
+         <h1>Catalogue
+            <span class="badge badge-info">Nuevos articulos</span>
+         </h1>      
+         <p style="font-style: italic;">"Cualquier gadget que puedas imaginar"</p>
        </div>
        <div class = "container">
          <nav aria-label="breadcrumb">
@@ -41,28 +43,38 @@
          <div>
             <img src="banner-background-5.jpg" class="img-fluid" alt="background image">
          </div>
-
-           <div class="row">
+         <div class="row">
             <div class="col-sm-6">
+               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" role="button" aria-expanded="false" aria-controls="funciona">
+                  Como funciona?
+               </button>
+            </div>
+            <div class="col-sm-6">
+               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" role="button" aria-expanded="false" aria-controls="pago">
+                  Como pago?
+               </button>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-sm-6 collapse multi-collapse" id="funciona">
                 <p>
                     <h3>Como funciona?</h3>
                     <p>Busca los productos y hoteles que desees y esten disponibles en nuestro catálogo genérico</p>
                 </p>    
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 collapse multi-collapse" id="pago">
                 <p>
                     <h3>Como pago?</h3>
                     <p>Debes mandar monedas fraternales a nuestro hotel especial en la ubicacion secreta.</p>
                 </p>    
             </div>
-
         </div>
 
          <div class = "d-flex flex-wrap flex-row-reverse">
             <div class="card card-gadget d-flex flex-column justify-content-between ml-2">
                <img class="card-img-top" src="expanse.jpg" alt="imagen de gadget exp.">
                <div class="card-body">
-                  <h5 class = "card-title">Gadget expansionista</h5>
+                  <h5 class = "card-title">Gadget expansionista</h5> 
                   <h6 class="card-subtitle text-muted">Surreal</h6>
                   <p class="card-text">Sirve para aumentar los espacios entre los atomos del objeto en expansion.</p>               
                </div>
@@ -96,6 +108,7 @@
                   </div>
                </div>
          </div>
+         </div>
                   
          <footer>
             <div class = "row"> 
@@ -113,10 +126,10 @@
                </div>
                <div class ="col-sm-4 d-flex flex-column align-items-end">
                   <h3>
-                     Quer trabalhar conosco?
+                     Quieres trabajar con nosotros?
                   </h3><br>
                   <p>
-                     Mande-nos seu CV
+                     Envianos tu CV
                   </p><br>
                   <a href="#" class ="btn btn-primary">
                      Aqui
@@ -124,9 +137,10 @@
                </div>
 
          </footer>
-      
-      <script src="node_modules/jquery/dist/jquery.min.js"></script>
-      <script src="node_modules/popper.js/dist/popper.min.js"></script>
-      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
    </body>
+         
+   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+   <script src="node_modules/popper.js/dist/popper.min.js"></script>
+   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </html>
