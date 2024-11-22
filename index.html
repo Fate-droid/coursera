@@ -45,12 +45,12 @@
          </div>
          <div class="row">
             <div class="col-sm-6">
-               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona" role="button" aria-expanded="false" aria-controls="funciona">
+               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" role="button" aria-expanded="false" aria-controls="funciona">
                   Como funciona?
                </button>
             </div>
             <div class="col-sm-6">
-               <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago" role="button" aria-expanded="false" aria-controls="pago">
+               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" role="button" aria-expanded="false" aria-controls="pago">
                   Como pago?
                </button>
             </div>
@@ -101,7 +101,9 @@
                      <h6 class="card-subtitle text-muted">Surreal</h6>
                      <p class="card-text">
                         Sirve para volver al pasado y saludar a tu abuelo! Claro que sin decirle quien sos.
-                     </p>               
+                     </p>            
+                     <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
+                     data-bs-target="#contacto">Contacto</button>   
                   </div>
                   <div>
                      <button class="btn btn-primary btn-compra">Comprar ya!</button>
@@ -109,6 +111,36 @@
                </div>
          </div>
          </div>
+
+         <div class="modal" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                     <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <forms>
+                     <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                     </div>
+                     <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                     </div>
+                  </forms>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
                   
          <footer>
             <div class = "row"> 

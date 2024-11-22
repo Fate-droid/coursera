@@ -101,8 +101,53 @@
         </div>
          </div>
          <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
-        <div class="d-flex justify-content-center">
-            <div class="card" style="width: 18rem;">
+        <div class="accordion" id="accordionTarjetas">
+            <div class="card">
+               <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                     <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                        Pase Plata
+                     </button>
+                  </h5>   
+               </div>
+               <div id="collapseBasica" class="collapse" aria-labelledby="headingOne"
+                  data-parent="#accordionTarjetas">
+                  <div class="card-body">
+                     Podes tener acceso ilimitado a repuestos de cualquier parte del gadget.
+                  </div>
+               </div>
+               <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                     <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#collapseGold" aria-expanded="true" aria-controls="collapseBasica">
+                        Pase Gold
+                     </button>
+                  </h5>   
+               </div>
+               <div id="collapseGold" class="collapse" aria-labelledby="headingOne"
+                  data-parent="#accordionTarjetas">
+                  <div class="card-body">
+                     Podes tener acceso ilimitado a todos los accesorios de cualquier parte del gadget.
+                  </div>
+               </div>
+               <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                     <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                     data-bs-target="#collapsePlatino" aria-expanded="true" aria-controls="collapsePlatino">
+                        Pase Platino
+                     </button>
+                  </h5>   
+               </div>
+               <div id="collapsePlatino" class="collapse" aria-labelledby="headingThree"
+                  data-parent="#accordionTarjetas">
+                  <div class="card-body">
+                     Podes tener acceso ilimitado a todos los accesorios y repuestos de cualquier parte del gadget.
+                  </div>
+               </div>
+            </div>
+         </div>
+            <div class="card">
                 <div class="card-header" style="background-color: violet; color:white">
                     Pases
                 </div>
@@ -119,6 +164,8 @@
          </div>
 
       </div>
+
+     
 
          <footer>
             <div class = "row"> 
