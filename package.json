@@ -5,7 +5,16 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "dev": "lite-server",
+    "start": "concurrently \"npm run watch:scss\" \"npm run dev \"",
+    "sass-dev": "sass --watch --update --style=expanded assets/scss:assets/css",
+    "sass-prod": "sass --no-source-map --style=compressed assets/scss:assets/css",
+    "scss": "sass --watch --update ../:../",
+    "watch:scss": "onchange './*.scss' -- npm run scss",
+    "clean": "rimraf dist",
+    "imagemin": "imagemin ../newproject/* --out-dir ../newproject/dist",
+    "usemin": "usemin ../index.html -d dist --htmlmin -o dist/index.html",
+    "build": "npm run clean && npm run scss && npm run imagemin && npm run usemin"
   },
   "repository": {
     "type": "git",
@@ -18,10 +27,20 @@
   },
   "homepage": "https://github.com/Fate-droid/coursera#readme",
   "devDependencies": {
-    "lite-server": "^2.6.1"
+    "copyfiles": "^2.4.1",
+    "cssmin": "^0.4.3",
+    "htmlmin": "^0.0.7",
+    "lite-server": "^2.6.1",
+    "onchange": "^7.1.0",
+    "rimraf": "^6.0.1",
+    "sass": "^1.81.0",
+    "uglifyjs": "^2.4.11",
+    "usemin-cli": "^0.6.0"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "concurrently": "^9.1.0",
+    "imagemin": "^9.0.0",
     "jquery": "^3.7.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"

@@ -4,10 +4,11 @@
        	<meta charset = "utf-8">
          <meta name="viewport" content="width=device-width, 
          initial-scale=1,shrink-to-fit=no">
-         <!--Bootstrap CSS-->
+         <!-- build:css dist/index.css -->
          <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
          <link rel="stylesheet" href="styles.css">
          <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+         <!-- endbuild -->
          <title> TIMES gadget </title>
    </head>
    <body>
@@ -50,7 +51,7 @@
                </button>
             </div>
             <div class="col-sm-6">
-               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" role="button" aria-expanded="false" aria-controls="pago">
+               <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" role="button" aria-expanded="false" aria-controls="pago funciona">
                   Como pago?
                </button>
             </div>
@@ -138,7 +139,7 @@
                         Sirve para volver al pasado y saludar a tu abuelo! Claro que sin decirle quien sos.
                      </p>            
                      <button type="button" class="btn btn-outline-success" data-bs-toggle="modal"
-                     data-bs-target="#contacto">Contacto</button>   
+                     data-bs-target="#contacto" id="contactoBtn">Contacto</button>   
                   </div>
                   <div>
                      <button class="btn btn-primary btn-compra" data-bs-toggle="popover" title="Nuevo!" data-bs-content="Consulta accesorios disponibles">Comprar ya!</button>
@@ -154,9 +155,6 @@
               <div class="modal-content">
                 <div class="modal-header">
                   <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-                     Popover on top
-                   </button>
                 </div>
                 <div class="modal-body">
                   <forms>
@@ -211,11 +209,36 @@
    <script src="node_modules/popper.js/dist/popper.min.js"></script>
    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- build:js dist/index.js -->
    <script>
 
       const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
       const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
       const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
       const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+      // $('#contactoBtn').on('show.bs.modal',function(e){
+      //    console.log("el modal se esta mostrando")
+      // });
+      const myModalEl = document.getElementById('contacto')
+      myModalEl.addEventListener('show.bs.modal', event => {
+            console.log("el modal se esta mostrando");
+            $('#contactoBtn').removeClass("btn-outline-sucess");
+            $('#contactoBtn').addClass("btn-primary");
+            $('#contactoBtn').prop('disabled',true);
+      })
+      myModalEl.addEventListener('shown.bs.modal', event => {
+            console.log("el modal se mostro");
+      })
+      myModalEl.addEventListener('hide.bs.modal', event => {
+            console.log("el modal se esta escondiendo");
+      })
+
+      myModalEl.addEventListener('hidden.bs.modal', event => {
+            console.log("el modal se escondio");
+            $('#contactoBtn').removeClass("btn-primary");
+            $('#contactoBtn').addClass("btn-outline-sucess");
+            $('#contactoBtn').prop('disabled',false);
+      })
    </script>   
+   <!-- endbuild -->
 </html>
