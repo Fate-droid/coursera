@@ -29,13 +29,18 @@
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "cssmin": "^0.4.3",
+    "grunt": "^1.6.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-sass": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
     "htmlmin": "^0.0.7",
     "lite-server": "^2.6.1",
     "onchange": "^7.1.0",
     "rimraf": "^6.0.1",
+    "ruby": "^0.6.1",
     "sass": "^1.81.0",
     "uglifyjs": "^2.4.11",
-    "usemin-cli": "^0.6.0"
+    "usemin-cli": "^0.0.7"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
@@ -44,5 +49,6 @@
     "jquery": "^3.7.1",
     "open-iconic": "^1.1.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "keywords": []
 }
